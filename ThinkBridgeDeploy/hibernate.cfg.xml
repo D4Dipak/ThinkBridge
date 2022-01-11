@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <hibernate-configuration xmlns="urn:nhibernate-configuration-2.2">
+    <session-factory>
+      
+      <property name="connection.provider">NHibernate.Connection.DriverConnectionProvider</property>
+
+      <property name="dialect">NHibernate.Dialect.MsSql2005Dialect</property>
+      <property name="connection.driver_class">NHibernate.Driver.SqlClientDriver</property>
+      <property name="connection.connection_string">server=DESKTOP-8NIVNLR;database=Test;user id=sa;password=version;pooling=true;max pool size=255</property>
+      <property name="show_sql">false</property>
+      <property name="adonet.batch_size">100</property>
+      <property name="command_timeout">60</property>
+      <property name="hbm2ddl.keywords">auto-quote</property>
+      <property name="connection.isolation">ReadCommitted</property>
+      <property name="query.substitutions">true 1, false 0, yes 'Y', no 'N'</property>
+    </session-factory>
+  </hibernate-configuration>
+  
+</configuration>
